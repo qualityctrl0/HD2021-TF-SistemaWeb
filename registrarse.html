@@ -19,10 +19,10 @@
   </style>
   </head>
   <body>
-    <div class="container w-75 bg-primary mt-4 rounded shadow">
+    <div class="container w-75 bg-danger mt-4 rounded shadow">
       <div class="row align-items-stretch">
-          
-          <div class="col bg-white p-5 rounded-end">
+        
+          <div class="col bg-dark text-white p-5 rounded-end">
               <div class="text-sm-start">
                   <img src="logo.png" width="48" alt="">
               </div>
@@ -48,11 +48,11 @@
                   <div class="mb-4">
                     <label for="Contraseña" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" name="Contraseña" id="password">
-                    <button class="btn btn-warning" type="button" onclick="mostrarContrasena()">Mostrar/Ocultar contraseña</button>
+                    <button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar/Ocultar contraseña</button>
                   </div>
                   <div class="mb-4">
                     <label for="Fecha">Fecha de nacimiento</label>
-                    <input type="date" id="fecha" class="form-control mb-3" name="Fecha" min="1910-01-01" max="2021-12-31" required>
+                    <input type="date" id="echa" class="form-control mb-3" name="Fecha" min="1910-01-01" max="2021-12-31" required>
                   </div>
                   <div class="mb-4">
                     <label for="edad" style="color: whitesmoke;">Edad</label>
@@ -72,10 +72,10 @@
                     <input type="text" class="form-control" id="Celular" name="Celular" value="9" required>
                   </div>              
                   <div class="d-grid">
-                        <button type="submit" class="btn btn-primary" >Registrarse</button>
+                        <button type="submit" class="btn btn-danger" >Registrarse</button>
                   </div>
                   <div class="my-3">
-                      <span>Ya tienes cuenta? <a href="iniciodesesion.html">Inicia Sesión</a></span>
+                      <span>Ya tienes cuenta? <a class="text-danger" href="iniciodesesion.html">Inicia Sesión</a></span>
                   </div>
               </form>
           </div>
