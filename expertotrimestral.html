@@ -25,7 +25,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
-              <img src="imagenes/slider.png" class="img-fluid" alt="">
+              <a href="index.html"><img src="imagenes/slider.png" class="img-fluid" alt="" ></a>
             </div>
             <div class="col-md">
               <h1>Plan Trimestral "Experto"</h1>
@@ -110,7 +110,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="trasera">
 				<div class="barra-magnetica"></div>
 				<div class="datos">
@@ -139,24 +138,24 @@
 		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
 			<div class="grupo">
 				<label for="inputNumero">Número de tarjeta</label>
-				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+				<input name =ntarjeta type="text" id="inputNumero" maxlength="19" autocomplete="off" required>
 			</div>
 			<div class="grupo">
 				<label for="inputNombre">Nombre</label>
-				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+				<input name=nombretarjeta type="text" id="inputNombre" autocomplete="off" required>
 			</div>
 			<div class="flexbox">
 				<div class="grupo expira">
 					<label for="selectMes">Expiracion</label>
 					<div class="flexbox">
 						<div class="grupo-select">
-							<select name="mes" id="selectMes">
+							<select name="mestarjeta" id="selectMes" required>
 								<option disabled selected>Mes</option>
 							</select>
 							<i class="fas fa-angle-down"></i>
 						</div>
 						<div class="grupo-select">
-							<select name="year" id="selectYear">
+							<select name="yeartarjeta" id="selectYear" required>
 								<option disabled selected>Año</option>
 							</select>
 							<i class="fas fa-angle-down"></i>
@@ -166,7 +165,7 @@
 
 				<div class="grupo ccv">
 					<label for="inputCCV">CCV</label>
-					<input type="text" id="inputCCV" maxlength="3">
+					<input name=ccv type="text" id="inputCCV" maxlength="3" required>
 				</div>
 			</div>
 			<button type="submit" class="btn-enviar">Comprar plan Experto Trimestral</button>
