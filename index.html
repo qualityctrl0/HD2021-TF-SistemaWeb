@@ -92,7 +92,7 @@
         <br><br>
         <img id="plan" src="imagenes/plan.png" class="img-fluid" alt="PLANES">
 
-        <!--Funcion para cambiar la imagen de pla mensual a trimestral-->
+        <!--Funcion en javascript para cambiar la imagen de plan mensual a trimestral-->
         <script language="javascript">
           function cambiarimagen(sw) {
             var pic;
@@ -112,6 +112,7 @@
           <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#opcion">COMPRAR PLAN PRINCIPIANTE</a>
           <a class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#opcion2">COMPRAR PLAN INTERMEDIO</a>
           <a class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#opcion3">COMPRAR PLAN EXPERTO</a>
+          <!--Botones para comprar principiante-->
           <div class="modal fade" id="opcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -120,8 +121,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <button type="button" class="btn btn-danger">Plan Mensual</button>
-                  <button type="button" class="btn btn-danger">Plan Trimestrual</button>
+                  <a type="button" class="btn btn-danger" href="principiantemensual.html">Plan Mensual</a>
+                  <a type="button" class="btn btn-danger" href="principiantetrimestral.html">Plan Trimestrual</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
@@ -129,7 +130,7 @@
               </div>
             </div>
           </div>
-
+          <!--Botones para comprar intermedio-->
           <div class="modal fade" id="opcion2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -138,8 +139,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <button type="button" class="btn btn-danger">Plan Mensual</button>
-                  <button type="button" class="btn btn-danger">Plan Trimestrual</button>
+                  <a type="button" class="btn btn-danger" href="intermediomensual.html">Plan Mensual</a>
+                  <a type="button" class="btn btn-danger" href="intermediotrimestral.html">Plan Trimestrual</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
@@ -147,7 +148,7 @@
               </div>
             </div>
           </div>
-
+          <!--Botones para comprar experto-->
           <div class="modal fade" id="opcion3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -156,8 +157,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <button type="button" class="btn btn-danger">Plan Mensual</button>
-                  <button type="button" class="btn btn-danger">Plan Trimestrual</button>
+                  <a type="button" class="btn btn-danger" href="expertomensual.html">Plan Mensual</a>
+                  <a type="button" class="btn btn-danger" href="expertotrimestral.html">Plan Trimestrual</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
