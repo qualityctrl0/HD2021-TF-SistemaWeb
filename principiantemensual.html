@@ -44,7 +44,7 @@
               </div>
               <h2 class="fw-bold text-center py-5">Tu información</h2>
               <!--LOGIN-->
-              <form action="insertar.php" method="POST">
+              <form action="insertar.php" method="POST" id="firstform">
                   <div class="mb-4">
                       <label for="nombrecompleto" class="form-label">Nombre completo</label>
                       <input type="text " class="form-control" name="nombrecompleto" required>
@@ -79,6 +79,14 @@
                   <div class="mb-4">
                     <label for="edad">Edad</label>
                     <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
+                  </div>
+                  <div class="mb-4">
+                    <label for="plan">Plan escogido</label>
+                    <input type="text" name="plan" id="plan" class="form-control input-sm" readonly="" value="Principiante"/>
+                  </div>
+                  <div class="mb-4">
+                    <label for="duracion">Duracion del plan</label>
+                    <input type="text" name="duracion" id="duracion" class="form-control input-sm" readonly="" value="Mensual"/>
                   </div>
                            
               </form>
@@ -135,7 +143,7 @@
 		</div>
 
 		<!-- Formulario -->
-		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+		<form action="insertar.php" method="POST" id="formulario-tarjeta" class="formulario-tarjeta" id="secondform">
 			<div class="grupo">
 				<label for="inputNumero">Número de tarjeta</label>
 				<input name =ntarjeta type="text" id="inputNumero" maxlength="19" autocomplete="off" required>
@@ -168,7 +176,7 @@
 					<input name=ccv type="text" id="inputCCV" maxlength="3" required>
 				</div>
 			</div>
-			<button type="submit" class="btn-enviar">Comprar plan Principiante Mensual</button>
+			<button type="submit" class="btn-enviar" onclick="submitForms()">Comprar plan Principiante Mensual</button>
             
 		</form>
         
@@ -191,6 +199,12 @@
         }
       }
     </script>
+    <script language="javascript">
+      function submitForms() {
+        document.getElementById("firstform").submit();
+        document.getElementById("secondform").submit();
+       }
+      </script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="Js/main.js"></script>
   </body>
