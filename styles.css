@@ -1,1171 +1,291 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-  .div {
-    display: flex;
-    max-width: 677px;
-    height: 606px;
-    width: 677px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  .div-2 {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-  }
-  @media (max-width: 991px) {
-    .div-2 {
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  .div-3 {
-    padding-bottom: 30px;
-    padding-top: 15px;
-    text-align: center;
-  }
-  .raw-img {
-    max-width: 100%;
-    vertical-align: middle;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-4 {
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  @media (max-width: 991px) {
-    .div-4 {
-      width: auto;
-    }
-  }
-  .div-5 {
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  @media (max-width: 991px) {
-    .div-5 {
-      width: auto;
-    }
-  }
-  .div-6 {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-7 {
-    border-bottom-color: rgb(94, 199, 34);
-    border-color: rgb(94, 199, 34);
-    border-left-color: rgb(94, 199, 34);
-    border-right-color: rgb(94, 199, 34);
-    border-top-color: rgb(94, 199, 34);
-    border-top: 4px solid rgb(65, 157, 208);
-    border-top-style: solid;
-    border-top-width: 4px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(93, 93, 93);
-    padding-bottom: 1px;
-    width: 58.3333%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-7 {
-      width: auto;
-      float: none;
-    }
-  }
-  .fieldset {
-    display: none;
-    color: rgb(93, 93, 93);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  @media (max-width: 991px) {
-    .fieldset {
-      display: block;
-    }
-  }
-  .div-8 {
-    border-top: 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0px 0px 5px 5px;
-    color: rgb(93, 93, 93);
-  }
-  .h1 {
-    color: rgb(93, 93, 93);
-    display: inline-block;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    vertical-align: middle;
-    font-size: 125%;
-    line-height: 1.33333;
-    text-rendering: optimizelegibility;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .table {
-    margin-bottom: 20px;
-    width: 100%;
-    background-color: transparent;
-    max-width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0px;
-  }
-  .thead {
-    display: none;
-    visibility: hidden;
-  }
-  .th {
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-    vertical-align: middle;
-    text-align: left;
-  }
-  .th-2 {
-    padding-bottom: 15px;
-    padding-right: 20px;
-    padding-top: 10px;
-    text-align: right;
-    vertical-align: top;
-    white-space: nowrap;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-  }
-  .td {
-    margin-right: 10px;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-    vertical-align: middle;
-  }
-  .div-9 {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .div-10 {
-    margin-right: 10px;
-    float: left;
-  }
-  .raw-img-2 {
-    max-width: 42px;
-    display: block;
-    vertical-align: middle;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-11 {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-bottom: 3px;
-    color: rgb(93, 93, 93);
-  }
-  .hr {
-    border-bottom: 2px solid rgb(221, 221, 221);
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    border-width: 0px 0px 2px;
-    height: 0px;
-  }
-  .td-2 {
-    padding-bottom: 15px;
-    padding-top: 12px;
-    padding-right: 20px;
-    text-align: right;
-    vertical-align: top;
-    white-space: nowrap;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-  }
-  .fieldset-2 {
-    margin-top: 10px;
-    color: rgb(93, 93, 93);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .h2 {
-    color: rgb(93, 93, 93);
-    font-size: 125%;
-    line-height: 1.33333;
-    text-rendering: optimizelegibility;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .div-12 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-13 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-13 {
-      width: auto;
-      float: none;
-    }
-  }
-  .label {
-    display: none;
-    visibility: hidden;
-    margin-bottom: 5px;
-  }
-  .input {
-    border-bottom-color: rgb(221, 221, 221);
-    border-color: rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    box-shadow: rgba(5, 5, 5, 0.2) 0px 0px 1px;
-    font-size: 110%;
-    height: 42px;
-    line-height: normal;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(204, 204, 204);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left: 1px solid rgb(204, 204, 204);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-radius: 4px;
-    border-right: 1px solid rgb(204, 204, 204);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(204, 204, 204);
-    border-top-left-radius: 4px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    color: rgb(85, 85, 85);
-    display: block;
-    transition: border-color 0.15s ease-in-out 0s,
-      box-shadow 0.15s ease-in-out 0s;
-    transition-delay: 0s, 0s;
-    transition-duration: 0.15s, 0.15s;
-    transition-property: border-color, box-shadow;
-    transition-timing-function: ease-in-out, ease-in-out;
-    vertical-align: middle;
-    width: 100%;
-  }
-  .div-14 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-14 {
-      width: auto;
-      float: none;
-    }
-  }
-  .fieldset-3 {
-    margin-top: 10px;
-    color: rgb(93, 93, 93);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-15 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-16 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-16 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-17 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-17 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-18 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-19 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-19 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-20 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-20 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-21 {
-    display: none;
-    visibility: hidden;
-  }
-  .select {
-    border-bottom: 0px;
-    border-color: rgb(128, 128, 128);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
-    margin-bottom: -1px;
-    margin-left: -1px;
-    margin-right: -1px;
-    margin-top: -1px;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: absolute;
-    width: 1px;
-  }
-  .span {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
-    color: rgb(85, 85, 85);
-    line-height: 1.42857;
-    width: 100%;
-  }
-  .span-2 {
-    background-color: rgb(238, 238, 238);
-    cursor: default;
-    height: 42px;
-    border-bottom-color: rgb(221, 221, 221);
-    border-color: rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    box-shadow: rgba(5, 5, 5, 0.25) 0px 0px 2px;
-    border-bottom: 1px solid rgb(170, 170, 170);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left: 1px solid rgb(170, 170, 170);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-radius: 4px;
-    border-right: 1px solid rgb(170, 170, 170);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(170, 170, 170);
-    border-top-left-radius: 4px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    display: block;
-    user-select: none;
-  }
-  .span-3 {
-    line-height: 42px;
-    padding-left: 12px;
-    color: rgb(68, 68, 68);
-    display: block;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-right: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    outline: 0px;
-  }
-  .span-4 {
-    line-height: 42px;
-    border-left: none;
-    right: 18px;
-    width: 36px;
-    height: 26px;
-    position: absolute;
-    top: 1px;
-    background-color: rgb(243, 243, 243);
-  }
-  .b {
-    background-position: 0px 0px;
-    border-bottom: 2px solid rgb(153, 153, 153);
-    border-bottom-color: rgb(153, 153, 153);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: rgb(153, 153, 153);
-    border-left: 0px solid rgb(153, 153, 153);
-    border-left-color: rgb(153, 153, 153);
-    border-left-style: solid;
-    border-right: 2px solid rgb(153, 153, 153);
-    border-right-color: rgb(153, 153, 153);
-    border-right-style: solid;
-    border-right-width: 2px;
-    border-style: solid;
-    border-top: 0px solid rgb(153, 153, 153);
-    border-top-color: rgb(153, 153, 153);
-    border-top-style: solid;
-    border-width: 0px 2px 2px 0px;
-    display: inline-block;
-    height: 12px;
-    margin-left: 10px;
-    position: relative;
-    top: -3px;
-    transform: rotate(45deg);
-    width: 12px;
-    left: 50%;
-    margin-top: -2px;
-    font-weight: 700;
-  }
-  .div-22 {
-    display: none;
-    visibility: hidden;
-  }
-  .span-5 {
-    background-color: rgb(238, 238, 238);
-    cursor: default;
-    height: 42px;
-    border-bottom-color: rgb(221, 221, 221);
-    border-color: rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    box-shadow: rgba(5, 5, 5, 0.25) 0px 0px 2px;
-    border-bottom: 1px solid rgb(170, 170, 170);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left: 1px solid rgb(170, 170, 170);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-radius: 4px;
-    border-right: 1px solid rgb(170, 170, 170);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(170, 170, 170);
-    border-top-left-radius: 4px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    display: block;
-    user-select: none;
-  }
-  .span-6 {
-    line-height: 42px;
-    padding-left: 12px;
-    color: rgb(68, 68, 68);
-    display: block;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-right: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    outline: 0px;
-  }
-  .span-7 {
-    line-height: 42px;
-    border-left: none;
-    right: 18px;
-    width: 36px;
-    height: 26px;
-    position: absolute;
-    top: 1px;
-    background-color: rgb(243, 243, 243);
-  }
-  .div-23 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-24 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-24 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-25 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-25 {
-      width: auto;
-      float: none;
-    }
-  }
-  .select-2 {
-    border-bottom: 0px;
-    border-color: rgb(0, 0, 0);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
-    margin-bottom: -1px;
-    margin-left: -1px;
-    margin-right: -1px;
-    margin-top: -1px;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: absolute;
-    width: 1px;
-  }
-  .span-8 {
-    height: 42px;
-    border-bottom-color: rgb(221, 221, 221);
-    border-color: rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    box-shadow: rgba(5, 5, 5, 0.25) 0px 0px 2px;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(170, 170, 170);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left: 1px solid rgb(170, 170, 170);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-radius: 4px;
-    border-right: 1px solid rgb(170, 170, 170);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(170, 170, 170);
-    border-top-left-radius: 4px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    cursor: pointer;
-    display: block;
-    user-select: none;
-  }
-  .span-9 {
-    line-height: 42px;
-    padding-left: 12px;
-    color: rgb(68, 68, 68);
-    display: block;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-right: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    outline: 0px;
-  }
-  .span-10 {
-    line-height: 42px;
-    border-left: none;
-    right: 18px;
-    width: 36px;
-    height: 26px;
-    position: absolute;
-    top: 1px;
-  }
-  .fieldset-4 {
-    margin-top: 10px;
-    color: rgb(93, 93, 93);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-26 {
-    margin-bottom: 10px;
-  }
-  .div-27 {
-    display: block;
-  }
-  .div-28 {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 25px;
-    max-width: 150px;
-    white-space: nowrap;
-  }
-  .input-2 {
-    line-height: normal;
-    margin-top: 4px;
-  }
-  .label-2 {
-    padding-left: 8px;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  .raw-img-3 {
-    vertical-align: middle;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-29 {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 25px;
-    max-width: 150px;
-    white-space: nowrap;
-  }
-  .input-3 {
-    line-height: normal;
-    margin-top: 4px;
-  }
-  .label-3 {
-    padding-left: 8px;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  .raw-img-4 {
-    vertical-align: middle;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-30 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-31 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-31 {
-      width: auto;
-      float: none;
-    }
-  }
-  .div-32 {
-    margin-bottom: 10px;
-  }
-  .div-33 {
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: rgb(221, 221, 221);
-    border-left: 1px solid rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right: 1px solid rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    box-shadow: rgba(5, 5, 5, 0.2) 0px 0px 1px;
-    height: 42px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-  }
-  .div-34 {
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    position: relative;
-  }
-  .input-4 {
-    font-size: 16px;
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    height: 1px;
-    left: 0px;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-  }
-  .div-35 {
-    margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .div-36 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  .div-37 {
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: rgb(221, 221, 221);
-    border-left: 1px solid rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right: 1px solid rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    box-shadow: rgba(5, 5, 5, 0.2) 0px 0px 1px;
-    height: 42px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-  }
-  .div-38 {
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    position: relative;
-  }
-  .input-5 {
-    font-size: 16px;
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    height: 1px;
-    left: 0px;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-  }
-  .div-39 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  .div-40 {
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: rgb(221, 221, 221);
-    border-left: 1px solid rgb(221, 221, 221);
-    border-left-color: rgb(221, 221, 221);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right: 1px solid rgb(221, 221, 221);
-    border-right-color: rgb(221, 221, 221);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-top-color: rgb(221, 221, 221);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-width: 1px;
-    box-shadow: rgba(5, 5, 5, 0.2) 0px 0px 1px;
-    height: 42px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-  }
-  .div-41 {
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    position: relative;
-  }
-  .input-6 {
-    font-size: 16px;
-    background: transparent;
-    background-color: transparent;
-    border: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    display: block;
-    height: 1px;
-    left: 0px;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-  }
-  .div-42 {
-    display: block;
-    width: 50%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-42 {
-      display: none;
-      width: auto;
-      float: none;
-    }
-  }
-  .div-43 {
-    background-image: url("https://transactions.sendowl.com/assets/checkouts/marketers/card_payment_methods-c39edb2abcbdf1c5283e1548bf76c1d86287bfe5f98ccf08aff39254e72aa247.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-width: 252px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  .fieldset-5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: rgb(255, 255, 255);
-    padding-left: 12px;
-    padding-right: 12px;
-    border-bottom: 0px;
-    border-color: rgb(255, 255, 255);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    background-color: rgb(25, 97, 130);
-    border-radius: 3px;
-    border-top-left-radius: 3px;
-    font-size: 125%;
-    font-weight: 350;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    text-align: center;
-    width: 100%;
-    appearance: button;
-    cursor: pointer;
-  }
-  .div-44 {
-    display: block;
-    width: 41.6667%;
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
-  @media (max-width: 991px) {
-    .div-44 {
-      display: none;
-      width: auto;
-      float: none;
-    }
-  }
-  .div-45 {
-    margin-left: 10px;
-  }
-  .div-46 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0px 0px 5px 5px;
-    border-top: 4px solid rgb(170, 170, 170);
-    border-top-color: rgb(170, 170, 170);
-    border-top-style: solid;
-    border-top-width: 4px;
-    color: rgb(93, 93, 93);
-  }
-  .h1-2 {
-    color: rgb(93, 93, 93);
-    display: inline-block;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    vertical-align: middle;
-    font-size: 125%;
-    line-height: 1.33333;
-    text-rendering: optimizelegibility;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .th-3 {
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-top: 10px;
-    vertical-align: middle;
-    text-align: left;
-  }
-  .th-4 {
-    padding-bottom: 5px;
-    padding-right: 20px;
-    padding-top: 10px;
-    text-align: right;
-    vertical-align: top;
-    white-space: nowrap;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-  }
-  .td-3 {
-    margin-right: 10px;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-top: 10px;
-    vertical-align: middle;
-  }
-  .div-47 {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .div-48 {
-    margin-right: 10px;
-    float: left;
-  }
-  .raw-img-5 {
-    max-width: 42px;
-    display: block;
-    vertical-align: middle;
-    border-bottom: 0px;
-    border-color: rgb(93, 93, 93);
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }
-  .div-49 {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-bottom: 3px;
-    color: rgb(93, 93, 93);
-  }
-  .hr-2 {
-    border-bottom: 2px solid rgb(221, 221, 221);
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    border-width: 0px 0px 2px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 0px;
-  }
-  .th-5 {
-    padding-bottom: 12px;
-    padding-top: 12px;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-    padding-left: 20px;
-    vertical-align: middle;
-    text-align: left;
-  }
-  .td-4 {
-    padding-bottom: 12px;
-    padding-top: 12px;
-    padding-right: 20px;
-    text-align: right;
-    vertical-align: top;
-    white-space: nowrap;
-    color: rgb(93, 93, 93);
-    font-size: 115%;
-  }
-  .div-50 {
-    background-color: rgb(252, 251, 214);
-    color: rgb(93, 93, 93);
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-  }
-  .h1-3 {
-    color: rgb(93, 93, 93);
-    font-size: 125%;
-    line-height: 1.33333;
-    text-rendering: optimizelegibility;
-    margin-bottom: 10px;
-  }
-  .ul {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image: url("https://transactions.sendowl.com/assets/checkouts/marketers/tick-03e9ffa4b17c4e4fc8d48d3c6b0ffb716e3c0c99c633cd2d848cee56bbe30158.png");
-    background-position: 0px 2px;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    list-style: none;
-    list-style-type: none;
-    min-height: 20px;
-    padding-left: 32px;
-  }
-  .div-51 {
-    background-image: url("https://transactions.sendowl.com/assets/checkouts/marketers/secure_badges-c4115e0d0196efb6b0d03d8211d31e5d124c8cfd619adac4bdb09b35d473c307.png");
-    background-position: 50% 0px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 140px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    max-width: 276px;
-    position: relative;
-  }
-  .div-52 {
-    left: 60px;
-    top: 5px;
-    width: 70px;
-    background-color: rgba(242, 242, 242, 0.8);
-    color: rgb(187, 187, 187);
-    line-height: 1.25;
-    position: absolute;
-  }
-  .div-53 {
-    left: 190px;
-    top: 5px;
-    width: 90px;
-    background-color: rgba(242, 242, 242, 0.8);
-    color: rgb(187, 187, 187);
-    line-height: 1.25;
-    position: absolute;
-  }
-  .div-54 {
-    left: 75px;
-    right: 75px;
-    text-align: center;
-    top: 125px;
-    background-color: rgba(242, 242, 242, 0.8);
-    color: rgb(187, 187, 187);
-    line-height: 1.25;
-    position: absolute;
-  }
+body {
+	background: #ddeefc;
+	font-family: 'Lato', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ---------- Estilos Generales de las Tarjetas ----------*/
+.tarjeta {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+/* ---------- Tarjeta Delantera ----------*/
+
+.tarjeta .delantera {
+	width: 100%;
+	background: url("imagenes/bg-tarjeta-02.jpg");
+	background-size: cover;
+}
+
+.delantera .logo-marca {
+	text-align: right;
+	min-height: 50px;
+}
+
+.delantera .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.delantera .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.delantera .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+	background: url("imagenes/bg-tarjeta-02.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.trasera .datos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trasera .datos p {
+	margin-bottom: 5px;
+}
+
+.trasera .datos #firma {
+	width: 70%;
+}
+
+.trasera .datos #firma .firma {
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+
+.trasera .datos #firma .firma p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 30px;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.trasera .datos #ccv {
+	width: 20%;
+}
+
+.trasera .datos #ccv .ccv {
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.trasera .leyenda {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.trasera .link-banco {
+	font-size: 14px;
+	color: #fff;
+}
+
+/* ---------- Contenedor Boton ----------*/
+.contenedor-btn .btn-abrir-formulario {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+	background: #df4759;
+	color: #fff;
+	position: relative;
+	top: -25px;
+	z-index: 3;
+	border-radius: 100%;
+	box-shadow: -5px 4px 8px rgba(24,56,182,0.4);
+	padding: 5px;
+	transition: all .2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.contenedor-btn .btn-abrir-formulario:hover {
+	background: #df4759;
+}
+
+.contenedor-btn .btn-abrir-formulario.active {
+	transform: rotate(45deg);
+}
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+	background: #fff;
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -150px;
+	z-index: 1;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	transition: clip-path .3s ease-out;
+}
+
+.formulario-tarjeta.active {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.formulario-tarjeta label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #93BDED;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.formulario-tarjeta select {
+	-webkit-appearance: none;
+}
+
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.formulario-tarjeta .grupo-select:hover i {
+	color: #93bfed;
+}
+
+.formulario-tarjeta .btn-enviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #df4759;
+	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+	cursor: pointer;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+	background: #df4759;
+}
