@@ -12,7 +12,7 @@
 
   
     <main style="background-color: black;">
-    
+      <!--Slider-->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -36,6 +36,7 @@
       </div>
     
       <br>
+      <!--Explicación de cada plan-->
       <div class="container px-4 py-5" id="hanging-icons">
         <h2 class="display-5 fw-bold text-center" style="color: white;">ELIGE TU PLAN</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -71,6 +72,7 @@
           <a class="btn btn-danger" href="#precios">VER PRECIOS</a>
         </div>
       </div>
+      <!--Imagenes de clientes satisfechos-->
       <div class="container-fluid text-center">
         <h2 class="display-5 fw-bold text-center" style="color: white;">CLIENTES SATISFECHOS</h2>
         <br>
@@ -83,14 +85,17 @@
 
       </div>
       
+      <!--Plan mensual y trimestral-->
       <div class="container-fluid text-center " style="background-color: rgb(15, 0, 0);" id="precios">
         <br>  
-        <a class="btn btn-danger" onclick="cambiarimagen(0)" >Plan Mensual</a> <a class="btn btn-dark" onclick="cambiarimagen(1)"  >Plan Trimestrual</a>
+        <a class="btn btn-danger" onclick="cambiarimagen(0)" >Plan Mensual</a> <a class="btn btn-dark" onclick="cambiarimagen(1)"  >Plan Trimestral</a>
         <br><br>
         <img id="plan" src="imagenes/plan.png" class="img-fluid" alt="PLANES">
+
+        <!--Funcion para cambiar la imagen de pla mensual a trimestral-->
         <script language="javascript">
           function cambiarimagen(sw) {
-            var pic,principiante,intermedio,experto;
+            var pic;
             if (sw ==0){
               pic = "imagenes/plan.png"
             }
@@ -101,6 +106,7 @@
           }
         </script>
 
+        <!--Botones para comprar los distintos planes-->
         <div class="container-fluid text-center"> 
           <br>
           <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#opcion">COMPRAR PLAN PRINCIPIANTE</a>
@@ -160,10 +166,24 @@
             </div>
           </div>
         </div>
+
         <br><br><br>
-        <div><!--Inicio de sesion-->
+        <!--Inicio de sesion-->
+        <div class="container-fluid text-center">
           <p style="text-align: center; color: white;" class="display-5 fw-bold text-center">¿Ya posees una cuenta en Gorilla Training Systems?</p>
           <p style="text-align: center; color: white;" class="display-5 fw-bold text-center">Inicia sesión <a href="login.html">aquí</a></p>
+        </div>
+        <br>
+      </div>
+      <br>
+      <!--Nosotros-->
+      <div class="container text-center" style="background-image: url(imagenes/nosotross.png);">
+        <div class="p-4 p-md-5 mb-4 text-white rounded text-center">
+          <div>
+            <h1 class="display-4 fw-bold">¿Quienes Somos?</h1>
+            <p class="lead my-3 fw-bolder">Para saber mas sobre quienes son los fundadores y administradores de "Gorilla Training Systems" pulsa el boton que se encuentra abajo</p>
+            <a class="btn btn-danger" href="nosotros.html">Nosotros</a>
+          </div>
         </div>
         <br>
       </div>
