@@ -46,47 +46,41 @@
               <!--LOGIN-->
               <form action="insertar.php" method="POST">
                   <div class="mb-4">
-                      <label for="Nombre" class="form-label">Nombre</label>
-                      <input type="text " class="form-control" name="Nombre">
+                      <label for="nombrecompleto" class="form-label">Nombre completo</label>
+                      <input type="text " class="form-control" name="nombrecompleto" required>
                   </div>
                   <div class="mb-4">
-                    <label for="Apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" name="Apellido">
+                    <label for="rut" class="form-label">RUT (Sin puntos y con guión)</label>
+                    <input type="text" class="form-control" name="rut" required maxlength="10" minlength="9" >
                   </div>
                   <div class="mb-4">
-                    <label for="Mail" class="form-label">RUT</label>
-                    <input type="email" class="form-control" name="Mail">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" name="correo" required>
                   </div>
                   <div class="mb-4">
-                    <label for="Mail" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" name="Mail">
-                  </div>
-                  <div class="mb-4">
-                    <label for="Celular" class="form-label">Celular</label>
-                    <input type="text" class="form-control" id="Celular" name="Celular" value="9" required>
-                  </div>  
-                  <div class="mb-4">
-                    <label for="Contraseña" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="Contraseña" id="password">
-                    <button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar / Ocultar contraseña</button>
-                  </div>
-                  <div class="mb-4">
-                    <label for="Fecha">Fecha de nacimiento</label>
-                    <input type="date" id="echa" class="form-control mb-3" name="Fecha" min="1910-01-01" max="2021-12-31" required>
-                  </div>
-                  <div class="mb-4">
-                    <label for="edad" style="color: whitesmoke;">Edad</label>
-                    <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
+                    <label for="contrasena" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" name="contrasena" id="password" required minlength="8">
+                    <br>
+                    <center><button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar contraseña</button></center>
                   </div>
                   <div class="mb-4">
                     <label for="Sexo" class="form-label">Sexo</label>
-                    <select  class="form-select" id="Sexo" name="Sexo" required>
+                    <select  class="form-select" id="sexo" name="sexo" required>
                             <option selected="true" disabled="disabled">Seleccione su sexo</option>
                             <option>Masculino</option>
                             <option>Femenino</option>
                             <option>Otros</option>
                     </select>
-                  </div>          
+                  </div> 
+                  <div class="mb-4">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" class="form-control mb-3" name="fechanac" min="1920-01-01" max="2007-12-31" required>
+                  </div>
+                  <div class="mb-4">
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
+                  </div>
+                           
               </form>
           </div>
           <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
@@ -100,12 +94,12 @@
 				<img src="imagenes/chip-tarjeta.png" class="chip" alt="">
 				<div class="datos">
 					<div class="grupo" id="numero">
-						<p class="label">Número Tarjeta</p>
+						<p class="label">Número de tarjeta</p>
 						<p class="numero">#### #### #### ####</p>
 					</div>
 					<div class="flexbox">
 						<div class="grupo" id="nombre">
-							<p class="label">Nombre Tarjeta</p>
+							<p class="label">Nombre</p>
 							<p class="nombre">Andres Alfaro</p>
 						</div>
 
@@ -144,7 +138,7 @@
 		<!-- Formulario -->
 		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
 			<div class="grupo">
-				<label for="inputNumero">Número Tarjeta</label>
+				<label for="inputNumero">Número de tarjeta</label>
 				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
 			</div>
 			<div class="grupo">
@@ -175,7 +169,7 @@
 					<input type="text" id="inputCCV" maxlength="3">
 				</div>
 			</div>
-			<button type="submit" class="btn-enviar">Suscribirse</button>
+			<button type="submit" class="btn-enviar">Comprar plan Intermedio Trimestral</button>
             
 		</form>
         
