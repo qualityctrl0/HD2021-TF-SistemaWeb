@@ -24,7 +24,22 @@ $sql="INSERT INTO usuarios(nombrecompleto, rut, correo, contrasena, sexo, fechan
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: index.html");
+    if($plan=="Experto"){
+        Header("Location: homeexperto.html");
+        
+    }else {
+    }
+    if($plan=="Intermedio"){
+        Header("Location: homeintermedio.html");
+        
+    }else {
+    }
+    if($plan=="Principiante"){
+        Header("Location: homeprincipiante.html");
+        
+    }else {
+    }
+    
     
 }else {
 }
