@@ -36,56 +36,10 @@
           </div>
         </div>
       </section>
-    <div class="container w-75 bg-danger mt-4 rounded shadow">
-      <div class="row align-items-stretch">
-          <div class="col bg-dark text-white p-5 rounded-end">
-              <div class="text-sm-start">
-                  <img src="imagenes/logo2.png" width="48" alt="">
-              </div>
-              <h2 class="fw-bold text-center py-5">Tu información</h2>
-              <!--LOGIN-->
-              <form action="insertar.php" method="POST">
-                  <div class="mb-4">
-                      <label for="nombrecompleto" class="form-label">Nombre completo</label>
-                      <input type="text " class="form-control" name="nombrecompleto" required>
-                  </div>
-                  <div class="mb-4">
-                    <label for="rut" class="form-label">RUT (Sin puntos y con guión)</label>
-                    <input type="text" class="form-control" name="rut" required maxlength="10" minlength="9" >
-                  </div>
-                  <div class="mb-4">
-                    <label for="correo" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" name="correo" required>
-                  </div>
-                  <div class="mb-4">
-                    <label for="contrasena" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="contrasena" id="password" required minlength="8">
-                    <br>
-                    <center><button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar contraseña</button></center>
-                  </div>
-                  <div class="mb-4">
-                    <label for="Sexo" class="form-label">Sexo</label>
-                    <select  class="form-select" id="sexo" name="sexo" required>
-                            <option selected="true" disabled="disabled">Seleccione su sexo</option>
-                            <option>Masculino</option>
-                            <option>Femenino</option>
-                            <option>Otros</option>
-                    </select>
-                  </div> 
-                  <div class="mb-4">
-                    <label for="fecha">Fecha de nacimiento</label>
-                    <input type="date" id="fecha" class="form-control mb-3" name="fechanac" min="1920-01-01" max="2007-12-31" required>
-                  </div>
-                  <div class="mb-4">
-                    <label for="edad">Edad</label>
-                    <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
-                  </div>
-                           
-              </form>
-          </div>
-          <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
-              <!-- Tarjeta -->
-              <h2 class="fw-bold text-center py-5">DATOS DE TARJETA</h2>
+    <div class="container  bg-danger mt-4 rounded shadow">
+      <center><div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+        <!-- Tarjeta -->
+        <h2 class="fw-bold text-center py-5">DATOS DE TARJETA Y PERSONALES</h2>
 		<section class="tarjeta" id="tarjeta">
 			<div class="delantera">
 				<div class="logo-marca" id="logo-marca">
@@ -135,7 +89,7 @@
 		</div>
 
 		<!-- Formulario -->
-		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+		<form action="insertar.php" method="POST" id="formulario-tarjeta" class="formulario-tarjeta">
 			<div class="grupo">
 				<label for="inputNumero">Número de tarjeta</label>
 				<input name =ntarjeta type="text" id="inputNumero" maxlength="19" autocomplete="off" required>
@@ -168,7 +122,49 @@
 					<input name=ccv type="text" id="inputCCV" maxlength="3" required>
 				</div>
 			</div>
-			<button type="submit" class="btn-enviar">Comprar plan Principiante Trimestral</button>
+      <div class="mb-4">
+        <label for="nombrecompleto" class="form-label">Nombre completo</label>
+        <input type="text " class="form-control" name="nombrecompleto" required>
+    </div>
+    <div class="mb-4">
+      <label for="rut" class="form-label">RUT (Sin puntos y con guión)</label>
+      <input type="text" class="form-control" name="rut" required maxlength="10" minlength="9" >
+    </div>
+    <div class="mb-4">
+      <label for="correo" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" name="correo" required>
+    </div>
+    <div class="mb-4">
+      <label for="contrasena" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" name="contrasena" id="password" required minlength="8">
+      <center><button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar contraseña</button></center>
+    </div>
+    <div class="mb-4">
+      <label for="Sexo" class="form-label">Sexo</label>
+      <select  class="form-select" id="sexo" name="sexo" required>
+              <option selected="true" disabled="disabled">Seleccione su sexo</option>
+              <option>Masculino</option>
+              <option>Femenino</option>
+              <option>Otros</option>
+      </select>
+    </div> 
+    <div class="mb-4">
+      <label for="fecha">Fecha de nacimiento</label>
+      <input type="date" id="fecha" class="form-control mb-3" name="fechanac" min="1920-01-01" max="2007-12-31" required>
+    </div>
+    <div class="mb-4">
+      <label for="edad">Edad</label>
+      <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
+    </div>
+    <div class="mb-4">
+      <label for="plan">Plan escogido</label>
+      <input type="text" name="plan" id="plan" class="form-control input-sm" readonly="" value="Principiante"/>
+    </div>
+    <div class="mb-4">
+      <label for="duracion">Duracion del plan</label>
+      <input type="text" name="duracion" id="duracion" class="form-control input-sm" readonly="" value="Trimestral"/>
+    </div>
+			<button type="submit" class="btn-enviar">COMPRAR PLAN</button>
             
 		</form>
         
