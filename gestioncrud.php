@@ -57,7 +57,7 @@
 
                 <!-- Consulta php para "BUSCAR" -->
                 <?php
-                 $busqueda=mysqli_query($con,"SELECT * FROM planes t1 INNER JOIN usuarios t2 ON t1.plan=t2.plan WHERE t2.nombrecompleto LIKE LOWER('%".$_POST["buscar"]."%') OR t2.sexo LIKE LOWER('%".$_POST["buscar"]."%') OR t2.plan LIKE LOWER('%".$_POST["buscar"]."%')");
+                 $busqueda=mysqli_query($con,"SELECT * FROM planes t1 INNER JOIN usuarios t2 ON t1.plan=t2.plan WHERE t2.nombrecompleto LIKE LOWER('%".$_POST["buscar"]."%') OR t2.sexo LIKE LOWER('%".$_POST["buscar"]."%') OR t2.plan LIKE LOWER('%".$_POST["buscar"]."%') OR t2.rut LIKE LOWER('%".$_POST["buscar"]."%') OR t2.duracion LIKE LOWER('%".$_POST["buscar"]."%') OR t2.edad LIKE LOWER('%".$_POST["buscar"]."%') ");
                 $numero = mysqli_num_rows($busqueda); ?>
                 <h5 class="card-tittle text-white">Resultados (<?php echo $numero; ?>)</h5>
                 <?php while ($resultado = mysqli_fetch_array($busqueda)){ ?>
