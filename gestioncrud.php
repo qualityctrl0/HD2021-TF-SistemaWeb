@@ -139,13 +139,11 @@
             </div>
     </div></center>
     
-    <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2021, Iron Revolution Gym, Hernán Gómez Rivera</p>
+    <div >
+        <footer class="p-5 bg-black text-white text-center  position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2021 Gorilla Training Systems</p>
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
