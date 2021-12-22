@@ -36,7 +36,7 @@
                                 <input type="text" class="form-control mb-3" name="contrasena" placeholder="Contraseña" minlength="8" id="password" value="<?php echo $resultado['contrasena']  ?>">
                                 <label for="sexo">Sexo</label>
                                 <select  class="form-select" id="sexo" name="sexo" value="<?php echo $resultado['sexo']  ?>">
-                                    <option selected="true" disabled="disabled">Confirme o modifique el sexo</option>
+                                    <option><?php echo $resultado['sexo']  ?></option>
                                     <option>Masculino</option>
                                     <option>Femenino</option>
                                     <option>Otros</option>
@@ -47,14 +47,14 @@
                                 <input type="number" name="edad" id="edad" class="form-control input-sm" readonly="" value="<?php echo $resultado['edad']  ?>"/>
                                 <label for="sexo">Plan escogido</label>
                                 <select  class="form-select" id="plan" name="plan" value="<?php echo $resultado['plan']  ?>">
-                                    <option selected="true" disabled="disabled">Confirme o modifique el plan</option>
+                                    <option><?php echo $resultado['plan']  ?></option>
                                     <option>Principiante</option>
                                     <option>Intermedio</option>
                                     <option>Experto</option>
                                 </select>
                                 <label for="sexo">Duracion del plan</label>
                                 <select  class="form-select" id="duracion" name="duracion" value="<?php echo $resultado['duracion']  ?>">
-                                    <option selected="true" disabled="disabled">Confirme o modifique la duracion del plan</option>
+                                    <option><?php echo $resultado['duracion']  ?></option>
                                     <option>Mensual</option>
                                     <option>Trimestral</option>
                                 </select>

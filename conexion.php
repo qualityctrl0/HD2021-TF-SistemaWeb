@@ -3,7 +3,7 @@
 function conectar(){
     $host="localhost";
     $user="root";
-    $pass="Vichuquen832";
+    $pass="hernan123";
     $bd="hd-2021-tf";
 
     $con=mysqli_connect($host,$user,$pass);
