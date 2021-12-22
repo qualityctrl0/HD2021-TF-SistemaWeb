@@ -238,7 +238,7 @@ body {
 
 .formulario-tarjeta input {
 	margin-bottom: 20px;
-	text-transform: capitalize;
+	text-transform:none;
 }
 
 .formulario-tarjeta .flexbox {
