@@ -116,7 +116,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="grupo ccv">
 					<label for="inputCCV">CCV</label>
 					<input name=ccv type="text" id="inputCCV" maxlength="3" required>
@@ -125,57 +124,59 @@
       <div class="mb-4">
         <label for="nombrecompleto" class="form-label">Nombre completo</label>
         <input type="text " class="form-control" name="nombrecompleto" required>
-    </div>
-    <div class="mb-4">
-      <label for="rut" class="form-label">RUT (Sin puntos y con guión)</label>
-      <input type="text" class="form-control" name="rut" required maxlength="10" minlength="9" >
-    </div>
-    <div class="mb-4">
-      <label for="correo" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" name="correo" required>
-    </div>
-    <div class="mb-4">
-      <label for="contrasena" class="form-label">Contraseña</label>
-      <input type="password" class="form-control" name="contrasena" id="password" required minlength="8">
-      <center><button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar contraseña</button></center>
-    </div>
-    <div class="mb-4">
-      <label for="Sexo" class="form-label">Sexo</label>
-      <select  class="form-select" id="sexo" name="sexo" required>
-              <option selected="true" disabled="disabled">Seleccione su sexo</option>
-              <option>Masculino</option>
-              <option>Femenino</option>
-              <option>Otros</option>
-      </select>
-    </div> 
-    <div class="mb-4">
-      <label for="fecha">Fecha de nacimiento</label>
-      <input type="date" id="fecha" class="form-control mb-3" name="fechanac" min="1920-01-01" max="2007-12-31" required>
-    </div>
-    <div class="mb-4">
-      <label for="edad">Edad</label>
-      <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
-    </div>
-    <div class="mb-4">
-      <label for="plan">Plan escogido</label>
-      <input type="text" name="plan" id="plan" class="form-control input-sm" readonly="" value="Intermedio"/>
-    </div>
-    <div class="mb-4">
-      <label for="duracion">Duracion del plan</label>
-      <input type="text" name="duracion" id="duracion" class="form-control input-sm" readonly="" value="Mensual"/>
-    </div>
+      </div>
+      <div class="mb-4">
+        <label for="rut" class="form-label">RUT (Sin puntos y con guión)</label>
+        <input type="text" class="form-control" name="rut" required maxlength="10" minlength="9" >
+      </div>
+      <div class="mb-4">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" name="correo" required>
+      </div>
+      <div class="mb-4">
+        <label for="contrasena" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" name="contrasena" id="password" required minlength="8">
+        <center><button class="btn btn-secondary" type="button" onclick="mostrarContrasena()">Mostrar contraseña</button></center>
+      </div>
+      <div class="mb-4">
+        <label for="Sexo" class="form-label">Sexo</label>
+        <select  class="form-select" id="sexo" name="sexo" required>
+          <option selected="true" disabled="disabled">Seleccione su sexo</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otros</option>
+        </select>
+      </div> 
+      <div class="mb-4">
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" class="form-control mb-3" name="fechanac" min="1920-01-01" max="2007-12-31" required>
+      </div>
+      <div class="mb-4">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" class="form-control input-sm" readonly=""/>
+      </div>
+      <div class="mb-4">
+        <label for="plan">Plan escogido</label>
+        <input type="text" name="plan" id="plan" class="form-control input-sm" readonly="" value="Intermedio"/>
+      </div>
+      <div class="mb-4">
+        <label for="duracion">Duracion del plan</label>
+        <input type="text" name="duracion" id="duracion" class="form-control input-sm" readonly="" value="Mensual"/>
+      </div>
+
 			<button type="submit" class="btn-enviar">COMPRAR PLAN</button>
-            
 		</form>
         
-	</div>
-          </div>
-      </div>
-    </div>
+	  </div>
+  </div>
     <br>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--Script para calcular edad--->
     <script src='Js/calcular_edad.js'></script>
+
+    <!--Script para mostrar la contraseña--->
     <script>
       function mostrarContrasena(){
         var tipo = document.getElementById("password");
@@ -187,6 +188,8 @@
         }
       }
     </script>
+    
+    <!--Fuente para la tarjeta--->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="Js/main.js"></script>
   </body>

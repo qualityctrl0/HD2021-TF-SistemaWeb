@@ -1,3 +1,4 @@
+<!--Conexion a la Base de datos--->
 <?php 
     include("conexion.php");
     $con=conectar();
@@ -16,7 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Gestión de datos GTS</title>
   </head>
-<body>
+<body style="background-color: black;">
+  
     <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -34,7 +36,9 @@
       </div>
     </div>
   </header>
-    <div class="container">
+  <br>
+  <br>
+    <div class="container text-white">
       <h2>Gestión de datos</h2>
     </div>
     <center><div >
@@ -44,23 +48,27 @@
                   <div class="mb-3">
                     <input type="text" class="form-control mb-3" name="buscar" id="buscar" placeholder="Ingrese su busqueda">
                   </div>
-                  <button type="text" class="btn btn-primary">Buscar</button>
+                  <button type="text" class="btn btn-danger">Buscar</button>
                 </form>
               </div>
             </div>
             <div class="card col-12 mt-5">
-              <div class="card-body">
+              <div class="card-body bg-black">
+
+                <!-- Consulta php para "BUSCAR" -->
                 <?php
                  $busqueda=mysqli_query($con,"SELECT * FROM planes t1 INNER JOIN usuarios t2 ON t1.plan=t2.plan WHERE t2.nombrecompleto LIKE LOWER('%".$_POST["buscar"]."%') OR t2.sexo LIKE LOWER('%".$_POST["buscar"]."%') OR t2.plan LIKE LOWER('%".$_POST["buscar"]."%')");
                 $numero = mysqli_num_rows($busqueda); ?>
-                <h5 class="card-tittle">Resultados (<?php echo $numero; ?>)</h5>
+                <h5 class="card-tittle text-white">Resultados (<?php echo $numero; ?>)</h5>
                 <?php while ($resultado = mysqli_fetch_array($busqueda)){ ?>
-                    
+
+                    <!-- Tabla que muestra los datos buscados" -->
                   <div >
-                    <table class="table" >
-                      <thead class="table-success table-striped">
+                    <table class="table bg-white" >
+                      <thead class="table-dark table-striped">
                         <tr>
-                            <th>Datos personales</th>
+                          <!-- Fila que muestra los apartados buscados" -->
+                          <th>Datos personales</th>
                           <th>ID</th>
                           <th>Nombre completo</th>
                           <th>RUT</th>
@@ -80,6 +88,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <!-- Muestra los datos de la Base de datos" -->
                             <th></th>
                           <th><?php  echo $resultado['id']?></th>
                           <th><?php  echo $resultado['nombrecompleto']?></th>
@@ -129,8 +138,10 @@
                                 <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteChildresn<?php echo $resultado['id']; ?>">Eliminar</button></th>
                           </tr>
                       </tbody>
+
                       <!--Ventana Modal para la Alerta de Eliminar--->
                       <?php include('modaldel.php'); ?>
+                      <!--Ventana Modal para la Alerta de Modificar--->
                       <?php  include('modalmod.php'); ?>
                     </table>
                   </div>
@@ -139,7 +150,8 @@
             </div>
     </div></center>
     
-    <div >
+    <div>
+      <!--Footer--->
         <footer class="p-5 bg-black text-white text-center  position-relative">
             <div class="container">
                 <p class="lead">Copyright &copy; 2021 Gorilla Training Systems</p>
@@ -147,18 +159,21 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--Scripts para mostrar los modals--->
     <script src="Js/jquery.min.js"></script>
     <script src="Js/popper.min.js"></script>
     <script src="Js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
 
         $(window).load(function() {
             $(".cargando").fadeOut(1000);
         });
 
-//Ocultar mensaje
+    //Ocultar mensaje
     setTimeout(function () {
         $("#contenMsjs").fadeOut(1000);
     }, 3000);
