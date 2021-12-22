@@ -1,4 +1,5 @@
 <?php
+//Conexion a la base de datos
 include("conexion.php");
 $con=conectar();
 
@@ -21,7 +22,7 @@ if($filas){
   
     $sql="UPDATE usuarios SET contrasena='$contrasena' WHERE correo='$correo'";
     $query=mysqli_query($con,$sql);
-
+    //Redirige al login, luego de hacer el cambio de contraseña
     if($query){
         echo'<script type="text/javascript">
         alert("Contraseña cambiada con exito! \n Volviendo al login...");
@@ -35,6 +36,7 @@ if($filas){
     ?>
     <?php
     include("recuperar.html");
+    //Redirige al login en caso de que la contraseñas no coincidan
     echo'<script type="text/javascript">
     alert("El correo ingresado no está registrado en nuestra pagina! \nRegresando al formulario de recuperación...");
     window.location.href="recuperar.html";

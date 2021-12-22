@@ -1,4 +1,6 @@
+<!--Consultas para validar el login--->
 <?php
+//Conexion a bd
 include("conexion.php");
 $con=conectar();
 
@@ -18,7 +20,7 @@ $busquedaplan=mysqli_query($con,"SELECT plan FROM usuarios where correo='$correo
 $resultado2 = mysqli_fetch_array($busquedaplan);
 $plan=$resultado2['plan'];
 
-
+//Condicionales para redirigir al plan seleccionado
 if($filas){
   
     if($plan=="Experto"){
@@ -36,7 +38,8 @@ if($filas){
         
     }else {
     }
-
+    
+//Alerta para el caso en que no coincidan
 }else{
     ?>
     <?php
