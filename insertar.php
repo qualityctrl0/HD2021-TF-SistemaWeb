@@ -30,7 +30,7 @@ if($query){
     }else {
     }
     if($plan=="Intermedio"){
-        Header("Location: homeintermedio.html");
+        Header("Location: homeintermedia.html");
         
     }else {
     }
