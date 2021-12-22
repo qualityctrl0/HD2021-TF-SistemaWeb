@@ -40,31 +40,30 @@
       <center><div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
         <!-- Tarjeta -->
         <h2 class="fw-bold text-center py-5">DATOS DE TARJETA Y PERSONALES</h2>
-		<section class="tarjeta" id="tarjeta">
-			<div class="delantera">
-				<div class="logo-marca" id="logo-marca">
-					<img src="imagenes/visa.png" alt="">
-				</div>
-				<img src="imagenes/chip-tarjeta.png" class="chip" alt="">
-				<div class="datos">
-					<div class="grupo" id="numero">
-						<p class="label">Número de tarjeta</p>
-						<p class="numero">#### #### #### ####</p>
-					</div>
-					<div class="flexbox">
+		    <section class="tarjeta" id="tarjeta">
+			    <div class="delantera">
+				    <div class="logo-marca" id="logo-marca">
+					    <img src="imagenes/visa.png" alt="">
+				    </div>
+				    <img src="imagenes/chip-tarjeta.png" class="chip" alt="">
+				    <div class="datos">
+					    <div class="grupo" id="numero">
+						    <p class="label">Número de tarjeta</p>
+						    <p class="numero">#### #### #### ####</p>
+					    </div>
+					  <div class="flexbox">
 						<div class="grupo" id="nombre">
 							<p class="label">Nombre</p>
 							<p class="nombre">Andres Alfaro</p>
 						</div>
-
 						<div class="grupo" id="expiracion">
 							<p class="label">Expiracion</p>
 							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="trasera">
+					  </div>
+				    </div>
+			    </div>
+			  <div class="trasera">
 				<div class="barra-magnetica"></div>
 				<div class="datos">
 					<div class="grupo" id="firma">
@@ -175,7 +174,10 @@
     <br>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Script para calcular edad--->
     <script src='Js/calcular_edad.js'></script>
+    
+    <!--Script para mostrar contraseña--->
     <script>
       function mostrarContrasena(){
         var tipo = document.getElementById("password");
@@ -187,8 +189,12 @@
         }
       }
     </script>
+
+    <!--Fuente para tarjeta--->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="Js/main.js"></script>
+    
+    <!--Script para girar tarjeta--->
+	  <script src="Js/main.js"></script>
   </body>
 
   <!-- Footer -->

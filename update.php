@@ -1,3 +1,4 @@
+<!-- Consulta para realizar modificacion en la base de datos--->
 <?php
 include("conexion.php");
 $con=conectar();
@@ -21,6 +22,7 @@ $ccv=$_POST['ccv'];
 $sql="UPDATE usuarios SET nombrecompleto='$nombrecompleto',rut='$rut',correo='$correo',contrasena='$contrasena',sexo='$sexo',fechanac='$fechanac', edad='$edad', plan='$plan' , duracion='$duracion' , ntarjeta='$ntarjeta' , nombretarjeta='$nombretarjeta' , mestarjeta='$mestarjeta' , yeartarjeta='$yeartarjeta' , ccv='$ccv'   WHERE id='$id'";
 $query=mysqli_query($con,$sql);
 
+//Para luego de hacer el update rediriga a la gestion del CRUD
 echo "<script type='text/javascript'>
         window.location='gestioncrud.php';
     </script>";

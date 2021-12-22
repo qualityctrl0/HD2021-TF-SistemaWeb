@@ -1,3 +1,4 @@
+<!-- Este apartado elimina datos de la BD y CRUD -->
 <?php
 
 include("conexion.php");

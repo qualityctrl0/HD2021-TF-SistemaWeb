@@ -1,3 +1,4 @@
+<!--Inserción a la Base de datos--->
 <?php
 include("conexion.php");
 $con=conectar();
@@ -23,6 +24,7 @@ $ccv=$_POST['ccv'];
 $sql="INSERT INTO usuarios(nombrecompleto, rut, correo, contrasena, sexo, fechanac, edad, plan, duracion, ntarjeta, nombretarjeta, mestarjeta, yeartarjeta, ccv) VALUES('$nombrecompleto','$rut','$correo','$contrasena','$sexo','$fechanac','$edad','$plan','$duracion','$ntarjeta','$nombretarjeta','$mestarjeta','$yeartarjeta','$ccv')";
 $query= mysqli_query($con,$sql);
 
+//Condicionales para redirigir a cada plan seleccionado
 if($query){
     if($plan=="Experto"){
         Header("Location: homeexperto.html");
